@@ -1,0 +1,12 @@
+[project]
+name = "busflow-api"
+version = "0.1.0"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "deltalake",
+    "pandas",
+    "pyarrow",
+    "pydantic",
+    "faker",
+]

@@ -1,0 +1,31 @@
+DIVISÃO DE RESPONSABILIDADES:
+
+   PAULO GLEIDSON LEITÃO SAMPAIO: Backend
+
+        Implementação da persistência com Delta Lake.
+
+        Criação da classe DeltaRepository e lógica de IDs sequenciais.
+
+        Desenvolvimento dos mecanismos de Streaming para garantir baixa ocupação de RAM (Paginação e Exportação).
+
+        Configuração do ambiente com uv e pyproject.toml.
+
+    JONATHAN ALVES DA SILVA: API e Integração
+
+        Criação dos endpoints FastAPI (F1, F2, F3 e F4) para as três entidades.
+
+        Implementação da lógica de atualização (PUT) e deleção (DELETE).
+
+        Desenvolvimento do utilitário de geração de Hashes (F7).
+
+        Documentação Swagger e tratamento de exceções HTTP.
+
+    JOELLITON DA SILVA COSME: Modelagem e exportação de dados
+
+        Modelagem das entidades Pydantic (Onibus, Rota, Viagem) usando tipos nativos do Python 3.10+.
+
+        Desenvolvimento do script de carga inicial (seed.py) usando a biblioteca Faker.
+
+        Implementação das rotas de exportação de arquivos CSV e ZIP (F5 e F6).
+
+        Validação da consistência dos dados gerados e testes funcionais do CRUD.
